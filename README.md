@@ -1,5 +1,49 @@
 # EpreuveBot
-API serving to provide Cameroonian students with past baccalaureat exam papers. This API is used by the Telegram bot @EpreuveBot.
+API to provide Cameroonian students with past baccalaureate exam papers. This API is used by the Telegram bot @EpreuveBot.
+# Objectives
+The main objective of this API is to facilitate Cameroonian students' access to previous baccalaureate exams. 
+
+Specific objectives include:
+Create a robust and secure API to manage requests for past exam papers.
+Store and organize past exam papers in a database.
+Implement efficient search mechanisms to enable students to quickly find the exams they need.
+Integrate the API with the Telegram bot @EpreuveBot to provide a user-friendly interface.
+# Dependencies
+The following dependencies are required to run the project:
+
+Python 3.7 or later
+Flask 2.0.1
+SQLAlchemy 1.4.22
+PostgreSQL (or another database compatible with SQLAlchemy)
+# Runtime instructions
+  1- Clone this repository on your local machine :
+git clone https://github.com/votre-utilisateur/Projet-API-Baccalaureat-Camerounais.git
+```
+
+  2- Go to the project directory :
+cd Projet-API-Baccalaureat-Camerounais
+```
+
+  3- Install the required dependencies:
+pip install -r requirements.txt
+```
+
+  4- Configure the database:
+Create an empty PostgreSQL database.
+Modify the config.py file with your database connection information.
+
+  5- Run the database migrations:
+python manage.py db upgrade
+```
+
+  6- Run the API :
+python app.py
+```
+
+  7- The API will now be accessible at http://localhost:5000. You can send HTTP requests to this address to interact with the API.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# EpreuveBot
+API pour fournir aux étudiants camerounais les épreuves d'examens de baccalauréats passés . Cette API est utilisée par le bot Telegram @EpreuveBot.
 # Objectifs
 L'objectif principal de cette API est de faciliter l'accès des étudiants camerounais aux epreuves des examens antérieurs du baccalauréat. 
 
